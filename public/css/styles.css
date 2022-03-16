@@ -1,0 +1,290 @@
+/* General */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header */
+div.top-header {
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header {
+  background-color: #eac926;
+  height: auto;
+  padding-bottom: 15px;
+}
+.top-header .headerText{
+  font-weight: 400;
+}
+.searchBar,
+.logo {
+  width: 50%;
+  margin: auto;
+}
+.searchBar{
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+header nav {
+  font-size: 12px;
+  display: none;
+  padding: 5px 0px;
+  font-size: 17px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.burger-menu{
+  background-color: #03264c;
+  color: white;
+  display: block;
+  max-width: 50px;
+  padding: 15px 0px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+}
+
+
+section.banner img {
+    width: 100%;
+}
+
+/* Main */
+main {
+    width: 90%;
+    /* margin: 20px; */
+}
+main section>h3{
+  display: flex;
+  justify-content: center;
+}
+main section article {
+  background-color: #fff;
+  display: flex;
+  padding: 15px;
+  margin: 5px;
+}
+main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -30px;
+}
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+main section article img {
+    width: 100%;
+}
+
+article div.main-article {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  margin-inline: 15px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  position: relative;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+.description{
+  display: none;
+}
+.fa-truck{
+  margin: 15px 0px 0px;
+}
+.price{
+  margin-top: 15px;
+}
+.discount{
+  margin-bottom: 15px;
+}
+/* Footer */
+footer{
+    display:block;
+    background-color: #fefefe;
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+footer i{
+    color: #1259c3;
+    font-size: 3em;
+    
+}
+div.footer{
+    text-align: center;
+    margin: 20px 10% ;
+    display:block;
+    font-size: 12px;
+    font-display: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footer h5{
+    font-size: 14px;
+    margin: 0px;
+    font-weight: 500;
+    color:black;
+}
+.footer p{
+    color: #666;
+}
+.copyright{
+    left: 10px;
+    text-align: start;
+}
+
+/* Queries */
+@media (min-width:361px) { /* "Tablets" */ 
+    /* Header */
+    .top-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .headerText{
+      max-width: 350px;
+      text-align: right;
+    }
+    .burger-menu{
+      display: none;
+    }
+    header nav{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+    }
+    
+    header nav ul{
+      display: flex;
+
+    }
+    header nav li{
+      margin: 0 5px;
+    }
+    
+    
+    /* Main */
+    div.flexCol{
+      box-sizing: border-box;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    main section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    main section article{
+      max-width: 45%;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    main section article img{
+      max-width: 90%;
+    }
+    .description{
+        display: block;
+    }
+
+    /* Footer */
+
+}
+
+@media (min-width:769px) { /* "Desktop" */ 
+    /* Header */
+
+
+    /* Main */
+    main section article{
+        max-width: 22%;
+    }
+    main section article img{
+        max-width: 90%;
+    }
+    /* Footer */
+}
