@@ -1,8 +1,13 @@
+/* Imports */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css';
+
 /* General */
-* {
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -17,69 +22,27 @@ h3 {
 p {
   font-size: 12px;
 }
-.flexCol{
+a{
+  color: #000;
+}
+.col{
     display: flex;
     flex-direction: column;
 }
-.flexRow{
+.row{
     display: flex;
     flex-direction: row;
 }
-
 /* Header */
-div.top-header {
-  padding: 5%;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
 header {
   background-color: #eac926;
-  height: auto;
-  padding-bottom: 15px;
-}
-.top-header .headerText{
-  font-weight: 400;
-}
-.searchBar,
-.logo {
-  width: 50%;
-  margin: auto;
-}
-.searchBar{
-  background-color: #fff;
-  border: 1px solid #000;
 }
 
-header nav {
-  font-size: 12px;
-  display: none;
-  padding: 5px 0px;
-  font-size: 17px;
-}
-
-header ul li {
-  list-style-type: none;
-}
-
-header ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
-header .form .input {
-  background-color: #fff;
-  border: 1px solid #000;
-  outline: none;
-  color: #666;
-  padding: 2px;
-}
-header .form .submit {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #666;
-  width: 10%;
+div.top-header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5%;
+  align-items: center;
 }
 
 header div.top-header p {
@@ -88,95 +51,46 @@ header div.top-header p {
   margin-top: 10px;
 }
 
-.burger-menu{
-  background-color: #03264c;
-  color: white;
+header div.logo {
+  padding: 10px;
+  width: 35%;
+}
+header form{
+  width: 300px;
+}
+header #search{
+  width: 250px;
+}
+header form button{
+  width: 25px;
+  height: 25px;
+}
+.headerText{
+  
+}
+div.burger-menu {
   display: block;
-  max-width: 50px;
-  padding: 15px 0px;
-  border-radius: 8px;
   text-align: center;
-  font-size: 18px;
-  margin: auto;
 }
 
-
-section.banner img {
-    width: 100%;
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
 }
 
-/* Main */
-main {
-    width: 90%;
-    /* margin: 20px; */
-}
-main section>h3{
-  display: flex;
-  justify-content: center;
-}
-main section article {
-  background-color: #fff;
-  display: flex;
-  padding: 15px;
-  margin: 5px;
-}
-main section article i{
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #FFF;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: -30px;
-}
-main section article i,
-.discount {
-    color: #39b54a;
-}
-
-main section article img {
-    width: 100%;
-}
-
-article div.main-article {
-  width: 100%;
-  border-top: 1px solid #ebebeb;
-  margin-inline: 15px;
-  flex-wrap: wrap;
-  align-items: baseline;
-  position: relative;
-}
-
-.price {
-  font-size: 18px;
-}
-
-.discount,
-.description {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-h3,
-.description {
-  color: #666;
-}
-.description{
+header nav {
+  font-size: 12px;
   display: none;
+  margin: 0 0.5%;
+  justify-content: space-between;
 }
-.fa-truck{
-  margin: 15px 0px 0px;
-}
-.price{
-  margin-top: 15px;
-}
-.discount{
-  margin-bottom: 15px;
-}
+
 /* Footer */
 footer{
     display:block;
@@ -193,7 +107,7 @@ footer i{
 }
 div.footer{
     text-align: center;
-    margin: 20px 10% ;
+    margin: 0 1% ;
     display:block;
     font-size: 12px;
     font-display: 18px;
@@ -215,76 +129,44 @@ div.footer{
 }
 
 /* Queries */
-@media (min-width:361px) { /* "Tablets" */ 
-    /* Header */
-    .top-header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .headerText{
-      max-width: 350px;
-      text-align: right;
-    }
-    .burger-menu{
-      display: none;
-    }
-    header nav{
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 15px;
-    }
-    
-    header nav ul{
-      display: flex;
+@media (min-width: 361px) { /* Tablet */
+  /* Header */
+  header nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px
+  }
+  header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header nav ul li{
+    margin: 0 5px;
+  }
+  header>div.burger-menu{
+    display: none;
+  }
 
-    }
-    header nav li{
-      margin: 0 5px;
-    }
-    
-    
-    /* Main */
-    div.flexCol{
-      box-sizing: border-box;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-    main section{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    main section article{
-      max-width: 45%;
-      display:flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
-    main section article img{
-      max-width: 90%;
-    }
-    .description{
-        display: block;
-    }
-
-    /* Footer */
+  /* Footer */
 
 }
 
-@media (min-width:769px) { /* "Desktop" */ 
-    /* Header */
-
-
-    /* Main */
-    main section article{
-        max-width: 22%;
-    }
-    main section article img{
-        max-width: 90%;
-    }
-    /* Footer */
+@media (min-width: 769px) { /* Desktop */
+  /* Header */
+  
+  
+  /* Footer */
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .generalFooter{
+    display: flex;
+    width: 100%;
+  }
+  footer .footer{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+  }
 }

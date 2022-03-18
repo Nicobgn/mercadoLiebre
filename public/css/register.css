@@ -1,0 +1,73 @@
+/* General */
+label{
+    font-size: 15px;
+}
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main label{
+    margin: 3px;
+    min-width: 125px;
+}
+#buttons{
+    margin-top: 5px;
+    justify-content: center;
+}
+button{
+    background-color: #fff;
+    width: 100px;
+    height: 25px;
+}
+#userInfo,
+#userProfile,
+#userConfig{
+    flex-wrap: wrap;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+#interestCategories{
+    flex-wrap: wrap;
+    width: 260px;
+    justify-content: center;
+    align-items: flex-start;
+}
+#interest::after{
+    display: block;
+    content: 'Puede seleccionar más de una';
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.inputDate,
+.inputText{
+    width: 190px;
+    height: 22px;
+    margin: 2px 0;
+}
+/* input:valid{
+    border: 1px solid blue;
+}
+input:invalid{
+    border: 1px solid red;
+} */
+
+/* Queries */
+@media (min-width: 361px) { /* Tablet */
+    #userProfile {
+        flex-direction: row;
+    }
+}
+@media (min-width: 769px) { /* Desktop */
+    main{
+        width: 60%;
+    }
+}
