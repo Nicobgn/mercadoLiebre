@@ -72,14 +72,14 @@ header p{
     width: 100%;
     text-align: center;
 }
-header #navBar{
+#navBar{
     opacity: 0;
     display: none;
     max-height: 0;
     padding: 10px;
     transition: all .3s ease;
 }
-header #navBar.active{
+#navBar.active{
     display: flex;
     opacity: 1;
     max-height: 25px;
@@ -88,7 +88,6 @@ header #navBar.active{
 header nav ul{
     gap: 10px;
 }
-
 #burgerButton{
     margin: 10px auto;
     padding: 15px;
@@ -149,6 +148,15 @@ footer h6 i{
     }
 }
 @media (min-width:769px) {
+    #burgerButton{
+        display: none;
+    }
+    #navBar{
+        display: flex;
+        justify-content: space-between;
+        max-height: 25px;
+        opacity: 1;
+    }
     footer section.colMobile{
         flex-direction: row;
     }
