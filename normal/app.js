@@ -18,7 +18,7 @@ app.use((req,res,next)=>{
 app.get('/',(req,res)=>{
     res.sendFile(bRoot+'/views/home.html')
 })
-app.get('/log-in',(req,res)=>{
+app.get('/login',(req,res)=>{
     res.sendFile(bRoot+'/views/login.html')
 })
 app.get('/register',(req,res)=>{

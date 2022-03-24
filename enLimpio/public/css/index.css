@@ -1,0 +1,84 @@
+main{
+    width: 90%;
+    margin: auto;
+}
+main i{
+    color: #39b54a;
+}
+main article,
+main article figure,
+main article figure img{
+    width: 100%;
+    transition: .3s ease all;
+}
+main section article{
+    background: #fff;
+    margin: 10px auto;
+    transition: .3s ease all;
+}
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: .3s ease all;
+}
+main section article:hover i{
+  transform: rotate(-90deg);
+}
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: .3 ease all;
+}
+main section article:hover .name{
+    height: auto;
+    opacity: 1;
+}
+.productDetails{
+    width: 95%;
+    margin: auto;
+    border-top: 2px #ebebeb solid;
+    position: relative;
+    padding: 10px 0px;
+    transition: .3s ease all;
+}
+.price{
+    font-size: 18px;
+    width: 50%;
+}
+.discount,
+.name{
+    font-size: 16px;
+}
+.discount{
+    color: #39b54a;
+    width: 50%;
+    text-align: end;
+    justify-content: end;
+}
+.name{
+    color: #666;
+    height: 0;
+    opacity: 0;
+    transition: 1s ease height;
+    transition: .2s ease opacity;
+}
+
+
+@media (min-width:361px){
+    main article{
+        width: 48%;
+    }
+}
+@media (min-width:769px){
+    main article{
+        width: 24%;
+    }
+}

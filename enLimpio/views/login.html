@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+<body>
+    <header>
+        <section class="topHeader row center">
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo MercadoLiebre">
+            <form action="" id="search" class="row">
+                <input type="text" placeholder="Buscar productos, marcas y más..." id="searchbar">
+                <button type="submit" id="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </section>
+        <section class="botHeader">
+            <nav id="navBar">
+                <ul class="leftNav colMobile">
+                    <li>
+                        <a href="#offers">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="">Tiendas Oficiales</a>
+                    </li>
+                    <li>
+                        <a href="">Vender</a>
+                    </li>
+                    <li>
+                        <a href="">Ayuda</a>
+                    </li>
+                </ul>
+                <ul class="rightNav colMobile">
+                    <li>
+                        <a href="/register"><i class="fa-solid fa-id-card"></i> Creá tu cuenta</a>
+                    </li>
+                    <li>
+                        <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Ingresá</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="burgerButton">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+    </header>
+    <main>
+        <form action="/login" method="post">
+            <input type="text" name="user" id="user" placeholder="Ingresa tu usuario">
+            <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+            <p>
+                <button type="submit" class="logButton"><a href="/">Iniciar Sesión</a></button>
+                <button type="reset">Reestablecer</button>
+            </p>
+        </form>
+    </main>
+    <footer class="loginFooter">
+        <section>
+            <article>
+                <h6>
+                    Copyright <i class="fa-solid fa-copyright"></i> 1999-2020 MercadoLiebre S.R.L.
+                </h6>
+            </article>
+        </section>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>

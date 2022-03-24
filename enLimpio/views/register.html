@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+<body>
+    <header>
+        <section class="topHeader row center">
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo MercadoLiebre">
+            <form action="" id="search" class="row">
+                <input type="text" placeholder="Buscar productos, marcas y más..." id="searchbar">
+                <button type="submit" id="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </section>
+        <section class="botHeader">
+            <nav id="navBar">
+                <ul class="leftNav colMobile">
+                    <li>
+                        <a href="#offers">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="">Tiendas Oficiales</a>
+                    </li>
+                    <li>
+                        <a href="">Vender</a>
+                    </li>
+                    <li>
+                        <a href="">Ayuda</a>
+                    </li>
+                </ul>
+                <ul class="rightNav colMobile">
+                    <li>
+                        <a href="/register"><i class="fa-solid fa-id-card"></i> Creá tu cuenta</a>
+                    </li>
+                    <li>
+                        <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Ingresá</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="burgerButton">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+    </header>
+    <main>
+        <form action="/register" method="post" class="col">
+            <h3>Datos del Usuario</h3>
+            <div class="col " id="userInfo">
+                <input type="text" name="nameAndSurname" id="nameAndSurname" placeholder="Ingrese su nombre y apellido"
+                    class="inputText" required>
+                <input type="text" name="user" id="user" placeholder="Ingrese su nombre de usuario" class="inputText"
+                    required>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" class="inputText" required>
+                <input type="date" name="date" id="date" max="2004-03-17" class="inputDate" required>
+                <input type="text" name="direccion" id="direccion" class="inputText" placeholder="Ingrese su domicilio"
+                    required>
+            </div>
+            <h3>Perfil de usuario</h3>
+            <div class="col " id="userProfile">
+                <label for="customer">
+                    <input type="radio" name="profile" value="customer" id="customer" required> Comprador
+                </label>
+                <label for="seller">
+                    <input type="radio" name="profile" value="seller" id="seller" required> Vendedor
+                </label>
+            </div>
+            <h3 id="interest">Categorías de interés</h3>
+            <div class="col " id="interestCategories">
+                <p>
+                    <input type="checkbox" id="electro">
+                    <label for="electro">Electro</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="fashion">
+                    <label for="fashion">Moda</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="home">
+                    <label for="home">Hogar</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="toy">
+                    <label for="toy">Juguetería</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="pureLife">
+                    <label for="pureLife">Vida sana</label>
+                </p>
+            </div>
+            <h3>Configuración de Usuario</h3>
+            <div class="col " id="userConfig">
+                <div>
+                    <label for="picture">¡Póngase una foto de perfil!</label>
+                    <input type="file" name="avatar" accept=".jpg" id="picture" required>
+                </div>
+                <div>
+                    <label for="password">Crea tu contraseña</label>
+                    <input type="password" placeholder="Crea tu contraseña" id="password" required minlength="8">
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirma tu contraseña</label>
+                    <input type="password" placeholder="Confirma tu contraseña" id="confirmPassword" required minlength="8">
+                </div>
+    
+            </div>
+            <div class="row" id="buttons">
+                <span>
+                    <button type="submit"><a href="/login">Registrarme</a></button>
+                </span>
+                <span>
+                    <button type="reset">Reestablecer</button>
+                </span>
+            </div>
+        </form>
+    </main>
+    <footer class="registerFooter">
+        <section>
+            <article>
+                <h6>
+                    Copyright <i class="fa-solid fa-copyright"></i> 1999-2020 MercadoLiebre S.R.L.
+                </h6>
+            </article>
+        </section>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>

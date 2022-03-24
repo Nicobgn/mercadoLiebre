@@ -2,7 +2,17 @@
 label{
     font-size: 15px;
 }
-
+#burgerButton{
+    display: none;
+}
+.registerFooter{
+    position: static;
+    bottom: 0;
+}
+.loginFooter{
+    position: absolute;
+    bottom: 0;
+}
 /* Main */
 main{
     display: flex;
@@ -17,12 +27,31 @@ main label{
     margin: 3px;
     min-width: 125px;
 }
+input[type=date],
+main input[type=text],
+main input[type=email],
+main input[type=password]{
+    width: 280px;
+    height: 24px;
+    padding: 14px 20px;
+    margin: 2px 0;
+    text-align: center;
+}
+input[type=date]::placeholder,
+main input[type=text]::placeholder,
+main input[type=email]::placeholder,
+main input[type=password]::placeholder{
+    text-align: center;
+}
 #buttons{
     margin-top: 5px;
     justify-content: center;
 }
-button{
-    background-color: #fff;
+main button[type=submit]{
+    background-color: #1259c3;
+}
+main button{
+    margin: 10px;
     width: 100px;
     height: 25px;
 }
@@ -47,18 +76,15 @@ button{
     font-size: 14px;
     font-weight: lighter;
 }
-.inputDate,
-.inputText{
-    width: 190px;
-    height: 22px;
-    margin: 2px 0;
-}
 /* input:valid{
     border: 1px solid blue;
 }
 input:invalid{
     border: 1px solid red;
 } */
+.logButton:hover{
+    background-color: #0022AA;
+}
 
 /* Queries */
 @media (min-width: 361px) { /* Tablet */
