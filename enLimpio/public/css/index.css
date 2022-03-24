@@ -34,7 +34,7 @@ main section article:hover i{
   transform: rotate(-90deg);
 }
 main section article:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
     transition: .3 ease all;
 }
 main section article:hover .name{
